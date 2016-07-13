@@ -1,0 +1,38 @@
+// JavaScript Document
+$(window).load(function(){$('body').delay(200).fadeIn(800);})
+
+$(document).ready(function(){
+
+	detectarOrientacion();
+		
+	$('nav a').on('touchstart', function(){
+		$('nav a').removeClass('activo');	
+		$(this).addClass('activo');
+		$('#contenido-secciones').css({display: "none"}).load($(this).attr('rel')).fadeIn(500);
+		if($(this).attr('rel') == 'secciones/inicio.html?v=1'){
+			$('#contenido-secciones').addClass('pagina-principal');
+		}else{
+			$('#contenido-secciones').removeClass('pagina-principal');
+		}
+		return false;
+	});
+
+	$('nav a').first().trigger('touchstart');
+
+	$('.logotipo').on('touchstart', function(){
+		$('nav a').first().trigger('touchstart');
+	});
+	
+});
+
+function detectarOrientacion(){
+	rotationInterval = setInterval( function(){cargarImagenFondo();}, 100);
+}
+
+function cargarImagenFondo(){
+	if($('#contenedora').width() < 1024){
+		$('#imagenFondo').html('<img src="images/bg-body-retrato.gif?v=1" />');
+	}else{
+		$('#imagenFondo').html('<img src="images/bg-body-paisaje.gif?v=1" />');	
+	}
+}

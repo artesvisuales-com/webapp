@@ -1,0 +1,90 @@
+@charset "utf-8";
+/* Estilos generales a las orientaciones */
+
+@font-face {
+    font-family:'caviar_dreamsregular';
+    src: url('../fuentes/caviardreams-webfont.eot');
+    src: url('../fuentes/caviardreams-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fuentes/caviardreams-webfont.woff') format('woff'),
+         url('../fuentes/caviardreams-webfont.ttf') format('truetype'),
+         url('../fuentes/caviardreams-webfont.svg#caviar_dreamsregular') format('svg');
+    font-weight:normal;
+    font-style:normal;
+}
+* {margin:0; padding:0;}
+
+/*ESTILOS GENERALES*/
+body {font-size:0.9em; font-family:Tahoma, Geneva, sans-serif; color:#333; line-height:1.6em; text-align:left; -webkit-text-size-adjust:none;}
+header, section, footer, aside, nav, article, figure {display:block;}
+p {margin:0.5em 0 1em 0;}
+a, a:hover {text-decoration:none; color:#257e9b;}
+h1 {text-align:right; font-weight:normal; font-family:'caviar_dreamsregular'; font-size:1.5em; color:#c97809; padding:0; margin:10px 0 20px 0;}
+h2 {text-align:left; font-weight:normal; font-family:'caviar_dreamsregular'; font-size:1.3em; color:#257e9b; margin-bottom:10px;}
+#contenedora {position:relative;}
+#imagenFondo {position:fixed; left:0; top:98px;}
+
+/*CABECERA*/
+header {background:#c98a2b url("../images/bg-cabecera.png") repeat-x left top; height:98px;}
+.logotipo {position:absolute; right:28px; top:25px;}
+
+/*PIE*/
+footer {z-index:3; height:20px; position:fixed; left:0; padding:10px 30px; background:#e8e8e8 url("../images/bg-pie.gif") repeat-x left bottom;}
+footer p {margin:0; color:#333; font-size:0.8em;}
+footer strong {color:#257e9b;}
+
+/*BANNERS*/
+aside {position:fixed; left:28px; top:450px; z-index:4;}
+aside a {overflow:hidden; width:200px; height:0; padding-top:78px;}
+
+/*MENU NAVEGACION*/
+nav {position:fixed; top:170px;}
+nav ul li {list-style:none outside none; background:url("../images/menu-subrayado.gif") repeat-x left bottom;}
+nav ul li a {font-family:'caviar_dreamsregular'; font-size:1.5em; color:#257e9b; display:block; background-image:url("../images/sp-iconos-nav.png"); background-repeat:no-repeat;}
+nav ul li a.activo {color:#c97809;}
+
+/*CONTENIDO*/
+#contenido-secciones {z-index:2; position:absolute; right:28px; width:490px; padding-bottom:40px;}
+#contenido-secciones .texto {background:rgba(255,255,255,0.4); border-top:1px solid #c97809; border-left:1px solid #c97809; padding:20px 20px 0 20px;}
+.alinear-derecha {float:left; margin-right:10px; margin-top:5px;}
+.alinear-izquierda {float:right; margin-left:10px; margin-top:5px;}
+#acceso-no-ipad {width:600px; height:300px; margin:3em auto 0 auto; position:relative;}
+#acceso-no-ipad img {position:absolute; left:0; top:0;}
+#acceso-no-ipad p {text-align:center; margin:0; position:absolute; left:270px; top:205px;} 
+/*inicio*/
+.pagina-principal {background:url("../images/estrella.png") no-repeat right bottom;}
+.pagina-principal h1 {text-align:left; color:#257e9b; margin:0 0 20px 0;}
+
+/*GALERIA IMAGENES*/
+#galeria {overflow:hidden; width:490px; margin:0 auto;}
+#galeria .imagenes-galeria {overflow:hidden; height:328px;}
+#galeria .seccion {height:328px; position:relative;}
+#galeria .seccion p {text-shadow:1px 1px 0 #333; background:rgba(153,153,153,0.5); color:#fff; margin:0; padding:10px; position:absolute; bottom:0; text-align:right;}
+#galeria .seccion img {width:100%;}
+#galeria ul {background:#fff; padding:5px; border:1px solid #ccc; overflow:hidden;}
+#galeria ul li {list-style:none outside none; float:left;}
+#galeria ul li a {background-image:url("../images/sp-miniaturas-galeria.jpg"); background-repeat:no-repeat; outline:none; display:block; width:75px; height:50px; text-indent:-999em;}
+#galeria li.min1 a {background-position:0 0;}
+#galeria li.min1 a.imgActiva {background-position:-75px 0;}
+#galeria li.min2 a {background-position:0 -50px;}
+#galeria li.min2 a.imgActiva {background-position:-75px -50px;}
+#galeria li.min3 a {background-position:0 -100px;}
+#galeria li.min3 a.imgActiva {background-position:-75px -100px;}
+#galeria li.min4 a {background-position:0 -150px;}
+#galeria li.min4 a.imgActiva {background-position:-75px -150px;}
+#galeria li.min5 a {background-position:0 -200px;}
+#galeria li.min5 a.imgActiva {background-position:-75px -200px;}
+#galeria li.min6 a {background-position:0 -250px;}
+#galeria li.min6 a.imgActiva {background-position:-75px -250px;}
+
+/*ENLACE SUBIR ARRIBA*/
+#enlaceSubir {position:fixed; bottom:55px; right:25px; z-index:100;}
+#enlaceSubir a {width:55px; height:55px; text-indent:-999em; display:block; overflow:hidden; text-decoration:none; background:rgba(153,153,153,0.5) url("../images/ico-flecha.png") no-repeat center center; -webkit-border-radius:10px; -webkit-transition:1s;}
+
+/*POPUP*/
+.popup {padding:10px; width:220px; box-shadow:5px 8px 20px 5px #999; border:1px solid #ccc; -webkit-border-radius:5px; background:rgba(255,255,255,0.7);}
+.popup a {float:right; font-size:1em; font-weight:bold; text-decoration:none; border:1px solid #ddd; padding:0 5px;}
+.popup a:hover {text-decoration:none;}
+.popup p {margin:0; text-align:left;}
+.popup p strong {margin:0; color:#257e9b;}
+#cargarTextoMadrid {position:absolute; left:260px;}
+#cargarTextoSevilla {position:absolute; left:170px;}

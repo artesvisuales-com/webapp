@@ -1,0 +1,41 @@
+@charset "utf-8";
+/* Estilos de la orientacion PAISAJE */
+
+#contenedora {width:1024px; height:748px;}
+
+/*CABECERA*/
+header {width:1024px;}
+
+/*CONTENIDO*/
+#contenido-secciones {top:98px;}
+#contenido-secciones .eliminar {display:none;}
+#contenido-secciones .imagen-destacada {margin-bottom:10px;}
+#contenido-secciones .texto-especial {background:none; border-top:none; border-left:none; padding:20px 0 0 0;}
+
+/*MENU NAVEGACION*/
+nav {left:100px;}
+nav ul {width:335px;}
+nav ul li a {padding:12px 20px 12px 10px;}
+nav ul li a.enlace01 {background-position:right 5px;} 
+nav ul li a.enlace02 {background-position:right -51px;} 
+nav ul li a.enlace03 {background-position:right -116px;} 
+nav ul li a.enlace04 {background-position:right -182px;} 
+nav ul li a.activo {background-position:right -240px;}
+
+/*BANNERS*/
+aside {width:440px; top:445px;}
+
+/*PIE*/
+footer {width:964px; top:708px;}
+
+/*GALERIA IMAGENES*/
+#galeria .imagenes-galeria {width:390px; float:left; margin-right:10px;}
+#galeria .seccion {width:390px;}
+#galeria .seccion p {width:373px;}
+#galeria ul {width:75px;}
+#galeria ul li {margin-bottom:3px;}
+#galeria ul li.min6 {margin-bottom:0;}
+
+/*POPUP*/
+#cargarTextoMadrid {top:210px;}
+#cargarTextoSevilla {top:360px;}

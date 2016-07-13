@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* Estilos de la orientacion RETRATO */
+
+#contenedora {width:768px; height:1004px;}
+
+/*CABECERA*/
+header {width:768px;}
+
+/*CONTENIDO*/
+#contenido-secciones {top:185px;}
+#contenido-secciones .imagen-destacada {margin-bottom:15px;}
+/*inicio*/
+.pagina-principal .texto {margin-top:90px;}
+
+/*MENU NAVEGACION*/
+nav {left:28px;}
+nav ul {width:200px;}
+nav ul li a {padding:8px 20px 8px 10px;}
+nav ul li a.enlace01 {background-position:right 15px;} 
+nav ul li a.enlace02 {background-position:right -45px;}
+nav ul li a.enlace03 {background-position:right -105px;} 
+nav ul li a.enlace04 {background-position:right -170px;} 
+nav ul li a.activo {background-position:right -230px;}
+
+/*BANNERS*/
+aside {width:200px; top:450px;}
+
+/*PIE*/
+footer {width:708px; top:964px;}
+
+/*GALERIA IMAGENES*/
+#galeria .imagenes-galeria {width:490px;}
+#galeria .seccion {width:490px;}
+#galeria .seccion p {width:470px;}
+#galeria ul {margin-top:20px;}
+#galeria ul li {margin-right:3px;}
+
+/*POPUP*/
+#cargarTextoMadrid {top:310px;}
+#cargarTextoSevilla {top:460px;}

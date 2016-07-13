@@ -1,0 +1,28 @@
+// ICONO IPAD
+<link type="text/css" rel="apple-touch-icon" href="images/app_icono.png?v=1" />
+
+
+// META-DATOS
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+
+// IMAGENES DE PRECARGA
+<link type="text/css" rel="apple-touch-startup-image" href="images/app_precarga-paisaje.png?v=1" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)" />
+<link type="text/css" rel="apple-touch-startup-image" href="images/app_precarga-retrato.png?v=1" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)" />
+    
+
+// FUNCION DETECTAR IPAD
+function deteccioniPad(){
+    if(navigator.platform == 'iPad'){
+	    //no hacer nada		
+    }else{
+	    $('#contenedora').css('display','none');
+	    $('#enlaceSubir').css('display','none');
+	    $('body #acceso-no-ipad').html('<img src="images/app_noipad.png?v=1" /><p>Estas intentando acceder acceder desde un <br /><strong>'+navigator.platform+'</strong></p>');
+    }
+}
+
+
+// DECLARACION FUNCION DETECTAR IPAD
+deteccioniPad();

@@ -1,0 +1,64 @@
+// FUNCION PLUGIN SCROLLTO
+
+$("#enlaceSubir").hide();
+	
+$(function(){
+	$(window).scroll(function(){
+		if($(this).scrollTop() > 100) {
+			$('#enlaceSubir').fadeIn();
+		} else {
+			$('#enlaceSubir').fadeOut();
+		}
+	});
+	$('#enlaceSubir a').click(function(){
+		$('body,html').animate({scrollTop:0}, 800);
+		return false;
+	});
+});
+
+
+
+// GALERIA DE IMAGENES
+
+<script type="text/javascript">
+	$(document).ready(function(){	
+	
+		$('#galeria ul a').on('touchstart', function(){	
+			$('#galeria ul a').removeClass('imgActiva');		
+			$(this).addClass('imgActiva');			
+			$('.imagenes-galeria').scrollTo($(this).attr('rel'), 300);		
+			return false;					
+		});
+		
+		$('#galeria ul a').first().trigger('touchstart');
+			   
+	});
+</script>
+
+
+
+// VENTANAS EMERGENTES
+
+<script type="text/javascript">
+	$(document).ready(function() {	
+		
+		$(function(){
+			$('#informacionMadrid').click(function(){
+				$('#cargarTextoMadrid').fadeIn(500);
+			});
+			$('#cerrar1').click(function(){
+				$('#cargarTextoMadrid').fadeOut(100);
+			});
+		});
+		
+		$(function(){
+			$('#informacionSevilla').click(function(){
+				$('#cargarTextoSevilla').fadeIn(500);
+			});
+			$('#cerrar2').click(function(){
+				$('#cargarTextoSevilla').fadeOut(100);
+			});
+		});		
+							
+	});
+</script>
